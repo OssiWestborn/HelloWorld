@@ -9,5 +9,15 @@
   <body>
     <h1>Willkommen!</h1>
     <p>Dies ist meine erste "Hello World" -App.</p>
+    <h2>Glücklicher Schüler</h2>
+    <button onclick"zeigeSchüler();">Bestimme glücklichen Schüler</button>
+    <div id="ausgabe"></div>
+    <script>
+        function zeigeSchüler(){
+          var schülerliste = ["Leon", "Jonas", "Steffen", "Angler", "Fabian"];
+          var zufall = Math.floor.Math.random()*schülerliste.length);
+          document.getElementByID("ausgabe").innerHTML=schülerliste[zufall];
+        }
+    </script>
   </body>
 </html>
